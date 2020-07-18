@@ -18,35 +18,18 @@ html {
 
 .morva {
   position: absolute;
-  top: 47%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 55%; height: 55%;
-}
-@media (min-width: 768px) {
-  .morva {
-  width: 120%; height: 120%;
-     top: 50%;
-  }
-}
-@media (min-width: 1024px) {
-  .morva {
-  width: 50%; height: 50%;
-
-  }
 }
 .home {
   position: fixed;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  top: 28%;
+  top: 30%;
   left: 0%;
-}
-@media (min-width: 768px) {
-  .home {
-     top: 24%;
-  }
 }
 .home canvas {
   position: absolute;
