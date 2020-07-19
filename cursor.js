@@ -5,24 +5,3 @@ document.addEventListener('mousemove', e => {
 })
 
  document.documentElement.classList.toggle('no-cursor')
-
- if (window.innerWidth <= 768) {
-  document.getElementsByTagName('BODY')[0].style.cursor = 'default'
-} else {
-  customCursor()
-}
-
-$(window).resize(function() {
-  if (window.innerWidth <= 768) {
-    var cursor = $(".cursor")
-    cursor.remove()
-    $('body').css({
-      cursor: "default",
-    })
-  } else {
-    $('body').css({
-      cursor: "none",
-    })
-    customCursor()
-  }
-});
