@@ -48,6 +48,34 @@ body {
   overflow: hidden;
   text-align:center;
 }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 body,
 html {
@@ -62,6 +90,10 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 55%; height: 55%;
+  animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
 }
 
 @media (max-width: 1024px)
@@ -104,6 +136,22 @@ html {
   overflow: hidden;
   top: 28%;
   left: 0%;
+  animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+@media (max-width: 991px)
+{
+ .home {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  top: 24%;
+  left: 0%;
+  }
 }
 
 @media (max-width: 767px)
@@ -113,7 +161,7 @@ html {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  top: 24%;
+  top: 20%;
   left: 0%;
   }
 }
@@ -268,6 +316,10 @@ html {
   width: 100%;
   text-align: center;
   margin: 2em auto;
+  animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
 }
 
 .cd-headline {
@@ -417,6 +469,12 @@ text-decoration: blink;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transform-origin: center;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+
 }
 
 
