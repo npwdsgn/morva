@@ -1,0 +1,36 @@
+        $(document).ready(function () {
+            $("button").click(function (event) {
+                event.preventDefault();
+                CopyToClipboard("hello@morvalab.com");
+            });
+        });
+
+        function CopyToClipboard(value, showNotification, notificationText) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(value).select();
+            document.execCommand("copy");
+            $temp.remove();
+
+            if (typeof showNotification === 'undefined') {
+                showNotification = true;
+            }
+            if (typeof notificationText === 'undefined') {
+                notificationText = '💌 𝗵𝗲𝗹𝗹𝗼@𝗺𝗼𝗿𝘃𝗮𝗹𝗮𝗯.𝗰𝗼𝗺 — 𝕔𝕠𝕡𝕚𝕖𝕕 𝕥𝕠 𝕔𝕝𝕚𝕡𝕓𝕠𝕒𝕣𝕕.';
+            }
+
+
+            var notificationTag = $("div.copy-notification");
+            if (showNotification && notificationTag.length == 0) {
+                notificationTag = $("<div/>", { "class": "copy-notification", text: notificationText });
+                $("body").append(notificationTag);
+
+                notificationTag.slideDown("3000", function () {
+                    setTimeout(function () {
+                        notificationTag.slideUp("3000", function () {
+                            notificationTag.remove();
+                        });
+                    }, 1000);
+                });
+            }
+        }
