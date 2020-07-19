@@ -168,6 +168,11 @@ html {
   text-align: center;
   margin: 7em auto;
 }
+@media (max-width: 767px){
+  .cd-intro {
+    display: none;
+  }
+}
 @media (max-width: 1024px)
 {
 .cd-headline {
@@ -213,7 +218,7 @@ html {
 {
   .cd-headline {
   font-family: 'Inter', sans-serif;
-  font-size: 56px;
+  font-size: 40px;
   color: #1B147C;
   line-height: 1.2;
 }
