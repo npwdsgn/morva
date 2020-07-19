@@ -9,6 +9,7 @@
 html.no-cursor, html.no-cursor * {
   cursor: none;
 }
+
 html.no-cursor .cursor {
   display: block;
   --size: 2rem;
