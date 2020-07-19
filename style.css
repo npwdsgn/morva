@@ -23,6 +23,40 @@ html {
   transform: translate(-50%, -50%);
   width: 55%; height: 55%;
 }
+
+@media (max-width: 1024px)
+{
+  .morva {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%; height: 65%;
+  }
+}
+
+@media (max-width: 991px)
+{
+  .morva {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; height: 100%;
+  }
+}
+
+@media (max-width: 767px)
+{
+  .morva {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%; height: 120%;
+  }
+}
+
 .home {
   position: fixed;
   height: 100vh;
@@ -129,57 +163,69 @@ html {
   transition: opacity 0.4s linear;
 }
 
-.cd-title {
-  position: absolute;
-  height: 64px;
-  line-height: 24px;
-  text-align: center;
-
-}
 .cd-intro {
   width: 68%;
-  max-width: 768px;
+  text-align: center;
+  margin: 7em auto;
+}
+@media (max-width: 1024px)
+{
+.cd-headline {
+  width: 68%;
   text-align: center;
   margin: 4em auto;
 }
-
-@media only screen and (min-width: 768px) {
-  .cd-intro {
-    margin: 5em auto;
-    width: 64%;
-    padding-top: 1%;
-  }
 }
-@media only screen and (min-width: 1170px) {
-  .cd-intro {
-    margin: 6em auto;
-    padding-top: 0%;
-  }
+@media (max-width: 991px)
+{
+.cd-headline {
+  width: 100%;
+  text-align: center;
+  margin-top: 2px;
+}
+}
+@media (max-width: 767px)
+{
+.cd-headline {
+  width: 100%;
+  text-align: center;
+  margin-top: 2px;
+}
 }
 
 .cd-headline {
   font-family: 'Inter', sans-serif;
-  font-size: 64px;
+  font-size: 48px;
   color: #1B147C;
   line-height: 1.2;
 }
-@media only screen and (min-width: 768px) {
+
+@media (max-width: 1024px)
+{
   .cd-headline {
-    font-size: 120px;
-    line-height: 90%;
-    font-weight: 400;
-  }
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  color: #1B147C;
+  line-height: 1.2;
 }
-@media only screen and (min-width: 1024px) {
-  .cd-headline {
-    font-size: 64px;
-    line-height: 90%;
-  }
 }
-@media only screen and (min-width: 1170px) {
+@media (max-width: 991px)
+{
   .cd-headline {
-    font-size: 48px;
-  }
+  font-family: 'Inter', sans-serif;
+  font-size: 56px;
+  color: #1B147C;
+  line-height: 1.2;
+}
+}
+@media (max-width: 767px)
+{
+  .cd-headline {
+  font-family: 'Inter', sans-serif;
+  font-size: 64px;
+  color: #1B147C;
+  line-height: 90%;
+}
 }
 
 .cd-words-wrapper {
