@@ -16,7 +16,7 @@
                 showNotification = true;
             }
             if (typeof notificationText === 'undefined') {
-                notificationText = '💌 𝗵𝗲𝗹𝗹𝗼@𝗺𝗼𝗿𝘃𝗮𝗹𝗮𝗯.𝗰𝗼𝗺 — 𝕔𝕠𝕡𝕚𝕖𝕕 𝕥𝕠 𝕔𝕝𝕚𝕡𝕓𝕠𝕒𝕣𝕕.';
+                notificationText = '💌 𝗵𝗲𝗹𝗹𝗼@𝗺𝗼𝗿𝘃𝗮𝗹𝗮𝗯.𝗰𝗼𝗺 copied to clipboard';
             }
 
 
@@ -30,7 +30,7 @@
                         notificationTag.slideUp("3000", function () {
                             notificationTag.remove();
                         });
-                    }, 1000);
+                    }, 2000);
                 });
             }
         }
