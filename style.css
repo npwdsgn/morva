@@ -42,6 +42,14 @@ html.no-cursor .cursor--active {
   --duration: .2s;
 }
 
+::-moz-selection { /* Code for Firefox */
+  background: white;
+}
+
+::selection {
+  background: white;
+}
+
 
 body {
   background: rgb(1,2,166);
