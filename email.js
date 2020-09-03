@@ -1,7 +1,7 @@
         $(document).ready(function () {
             $("button").click(function (event) {
                 event.preventDefault();
-                CopyToClipboard("hello@morvalab.com");
+                CopyToClipboard("lets.morva@gmail.com");
             });
         });
 
