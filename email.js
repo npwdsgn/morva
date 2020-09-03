@@ -16,7 +16,7 @@
                 showNotification = true;
             }
             if (typeof notificationText === 'undefined') {
-                notificationText = '💌 𝗵𝗲𝗹𝗹𝗼@𝗺𝗼𝗿𝘃𝗮𝗹𝗮𝗯.𝗰𝗼𝗺 copied to clipboard';
+                notificationText = '💌 lets.morva@gmail.com copied to clipboard';
             }
 
 
