@@ -1,7 +1,7 @@
         $(document).ready(function () {
             $("button").click(function (event) {
                 event.preventDefault();
-                CopyToClipboard("lets.morva@gmail.com");
+                CopyToClipboard("hello@morvalab.com");
             });
         });
 
@@ -16,7 +16,7 @@
                 showNotification = true;
             }
             if (typeof notificationText === 'undefined') {
-                notificationText = '💌 lets.morva@gmail.com copied to clipboard';
+                notificationText = '💌 hello@morvalab.com copied to clipboard';
             }
 
 
